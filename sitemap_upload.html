@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sitemap Upload</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="sitemap_upload.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Sitemap Upload</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="sitemapFile">Upload your sitemap:</label>
+                <input type="file" id="sitemapFile" name="sitemapFile" accept=".xml">
+            </div>
+            <div class="form-group">
+                <label for="numLinks">Number of Interlinks:</label>
+                <input type="number" id="numLinks" name="numLinks" min="6" max="8" value="6">
+            </div>
+            <button type="submit" id="uploadButton">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
